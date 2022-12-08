@@ -1,13 +1,12 @@
 {
   "name": "helping-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "parsa jiravand",
   "description": "simple utils for javascript",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "uglifyjs ./core.js --compress --mangle --comments --output ./index.js",
-    "build:es5": "babel src -d core"
+    "build:es5": "rm -rf core && babel src -d core"
   },
   "license": "MIT",
   "files": [
