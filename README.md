@@ -58,12 +58,12 @@ console.log(isString(true)) // false
 ```
 2. You can import in your js file es5 (nodejs)
 ```javascript
-const { isString } = require('helping-js/core/types')
+var { isString } = require('helping-js/core/types')
 
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
-3. You can usage from CDN
+3. You can usage from CDN (only modules)
 ```javascript
 import { isString } from 'https://unpkg.com/browse/helping-js/core/types.js'
 

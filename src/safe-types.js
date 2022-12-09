@@ -1,4 +1,4 @@
-import { HAS_WINDOW_SUPPORT, WINDOW } from "./env";
+import { HAS_WINDOW_SUPPORT, WINDOW } from "./supoort";
 
 /* istanbul ignore next */
 export const Element = HAS_WINDOW_SUPPORT
