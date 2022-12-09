@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.File = exports.SVGElement = exports.HTMLElement = exports.Element = undefined;
 
-var _env = require("./env");
+var _supoort = require("./supoort");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -14,7 +14,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /* istanbul ignore next */
-var Element = exports.Element = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.Element : function (_Object) {
+var Element = exports.Element = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.Element : function (_Object) {
   _inherits(Element, _Object);
 
   function Element() {
@@ -27,7 +27,7 @@ var Element = exports.Element = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.Element : 
 }(Object);
 
 /* istanbul ignore next */
-var HTMLElement = exports.HTMLElement = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.HTMLElement : function (_Element) {
+var HTMLElement = exports.HTMLElement = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.HTMLElement : function (_Element) {
   _inherits(HTMLElement, _Element);
 
   function HTMLElement() {
@@ -40,7 +40,7 @@ var HTMLElement = exports.HTMLElement = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.HT
 }(Element);
 
 /* istanbul ignore next */
-var SVGElement = exports.SVGElement = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.SVGElement : function (_Element2) {
+var SVGElement = exports.SVGElement = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.SVGElement : function (_Element2) {
   _inherits(SVGElement, _Element2);
 
   function SVGElement() {
@@ -53,7 +53,7 @@ var SVGElement = exports.SVGElement = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.SVGE
 }(Element);
 
 /* istanbul ignore next */
-var File = exports.File = _env.HAS_WINDOW_SUPPORT ? _env.WINDOW.File : function (_Object2) {
+var File = exports.File = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.File : function (_Object2) {
   _inherits(File, _Object2);
 
   function File() {
