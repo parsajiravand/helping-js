@@ -49,6 +49,10 @@ export default {
       {
         text: "Types",
         link: "/types/",
+      },
+      {
+        text: "Support",
+        link: "/support/",
       }
     ],
   }),

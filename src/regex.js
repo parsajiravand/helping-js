@@ -1,17 +1,16 @@
 // --- General ---
 
 export const RX_ARRAY_NOTATION = /\[(\d+)]/g
-export const RX_BV_PREFIX = /^(BV?)/
-export const RX_DIGITS = /^\d+$/
-export const RX_EXTENSION = /^\..+/
-export const RX_HASH = /^#/
-export const RX_HASH_ID = /^#[A-Za-z]+[\w\-:.]*$/
-export const RX_HTML_TAGS = /(<([^>]+)>)/gi
-export const RX_HYPHENATE = /\B([A-Z])/g
-export const RX_LOWER_UPPER = /([a-z])([A-Z])/g
-export const RX_NUMBER = /^[0-9]*\.?[0-9]+$/
-export const RX_PLUS = /\+/g
-export const RX_REGEXP_REPLACE = /[-/\\^$*+?.()|[\]{}]/g
+export const RX_DIGITS = /^\d+$/ 
+export const RX_EXTENSION = /^\..+/ //.test
+export const RX_HASH = /^#/ //#test
+export const RX_HASH_ID = /^#[A-Za-z]+[\w\-:.]*$/ //#test
+export const RX_HTML_TAGS = /(<([^>]+)>)/gi //<div>
+export const RX_HYPHENATE = /\B([A-Z])/g //teSt
+export const RX_LOWER_UPPER = /([a-z])([A-Z])/g //testTAt lower befoer upper
+export const RX_NUMBER = /^[0-9]*\.?[0-9]+$/ //123123 just number
+export const RX_PLUS = /\+/g //get plus
+// export const RX_REGEXP_REPLACE = /[-/\\^$*+?.()|[\]{}]/g
 export const RX_SPACES = /[\s\uFEFF\xA0]+/g
 export const RX_SPACE_SPLIT = /\s+/
 export const RX_STAR = /\/\*$/
@@ -47,13 +46,6 @@ export const RX_QUERY_START = /^(\?|#|&)/
 export const RX_ASPECT = /^\d+(\.\d*)?[/:]\d+(\.\d*)?$/
 export const RX_ASPECT_SEPARATOR = /[/:]/
 
-// --- Grid ---
-
-export const RX_COL_CLASS = /^col-/
-
-// --- Icon ---
-
-export const RX_ICON_PREFIX = /^BIcon/
 
 // --- Locale ---
 
