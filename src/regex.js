@@ -10,24 +10,23 @@ export const RX_HYPHENATE = /\B([A-Z])/g //teSt
 export const RX_LOWER_UPPER = /([a-z])([A-Z])/g //testTAt lower befoer upper
 export const RX_NUMBER = /^[0-9]*\.?[0-9]+$/ //123123 just number
 export const RX_PLUS = /\+/g //get plus
-// export const RX_REGEXP_REPLACE = /[-/\\^$*+?.()|[\]{}]/g
-export const RX_SPACES = /[\s\uFEFF\xA0]+/g
-export const RX_SPACE_SPLIT = /\s+/
-export const RX_STAR = /\/\*$/
-export const RX_START_SPACE_WORD = /(\s|^)(\w)/g
-export const RX_TRIM_LEFT = /^\s+/
-export const RX_TRIM_RIGHT = /\s+$/
-export const RX_UNDERSCORE = /_/g
-export const RX_UN_KEBAB = /-(\w)/g
+export const RX_REGEXP_REPLACE = /[-/\\^$*+?.()|[\]{}]/g //check [-/\\^$*+?.()|[\]{}]
+export const RX_SPACES = /[\s\uFEFF\xA0]+/g //get spaces
+export const RX_SPACE_SPLIT = /\s+/ //first split spaces
+// export const RX_STAR = /\/\*$/
+export const RX_START_SPACE_WORD = /(\s|^)(\w)/g //get start space+charchter space charachters
+export const RX_TRIM_LEFT = /^\s+/ //get spaces from start
+export const RX_TRIM_RIGHT = /\s+$/ //get spaces from end
+export const RX_UNDERSCORE = /_/g //get _
+export const RX_UN_KEBAB = /-(\w)/g //get -+charchter charchter
 
 // --- Date ---
 
 // Loose YYYY-MM-DD matching, ignores any appended time inforation
 // Matches '1999-12-20', '1999-1-1', '1999-01-20T22:51:49.118Z', '1999-01-02 13:00:00'
-export const RX_DATE = /^\d+-\d\d?-\d\d?(?:\s|T|$)/
+export const RX_DATE = /^\d+-\d\d?-\d\d?(?:\s|T|$)/ //get time first slice
 
-// Used to split off the date parts of the YYYY-MM-DD string
-export const RX_DATE_SPLIT = /-|\s|T/
+
 
 // Time string RegEx (optional seconds)
 export const RX_TIME = /^([0-1]?[0-9]|2[0-3]):[0-5]?[0-9](:[0-5]?[0-9])?$/
