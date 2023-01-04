@@ -1,11 +1,10 @@
 {
   "name": "helping-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "parsa jiravand",
   "description": "simple utils for javascript",
   "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:es5": "rm -rf core && babel src -d core"
   },
   "license": "MIT",
