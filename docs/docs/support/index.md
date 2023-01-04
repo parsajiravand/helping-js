@@ -6,19 +6,19 @@ check your browser or server or phone support global variables.
 1. You can import in your js file es6 (modules,vue,react,...)
 
 ```javascript
-import { HAS_WINDOW_SUPPORT } from 'helping-js/core/types'
+import { HAS_WINDOW_SUPPORT } from 'helping-js/core/support'
 
 console.log(HAS_WINDOW_SUPPORT) // true
 ```
 2. You can import in your js file es5 (nodejs)
 ```javascript
-var { HAS_WINDOW_SUPPORT } = require('helping-js/core/types')
+var { HAS_WINDOW_SUPPORT } = require('helping-js/core/support')
 
 console.log(HAS_WINDOW_SUPPORT) // true
 ```
 3. You can usage from CDN (only modules)
 ```javascript
-import { HAS_WINDOW_SUPPORT } from 'https://unpkg.com/browse/helping-js/core/types.js'
+import { HAS_WINDOW_SUPPORT } from 'https://unpkg.com/browse/helping-js/core/support.js'
 
 console.log(HAS_WINDOW_SUPPORT) // true
 ```
@@ -33,10 +33,7 @@ console.log(HAS_WINDOW_SUPPORT) // true
 | HAS_PROMISE_SUPPORT          | Return Boolean if support Promise        | 
 | HAS_MUTATION_OBSERVER_SUPPORT| Return Boolean if support MutationObserver       | 
 | IS_BROWSER                   | check if you are in browser or server       | 
-| WINDOW                       | safe call to window object (doesn't throw an error if the window doesn't exist)      | 
-| DOCUMENT                     | safe call to document object (doesn't throw an error if the document doesn't exist)       | 
-| NAVIGATOR                    | safe call to navigator object (doesn't throw an error if the navigator doesn't exist)      | 
-| USER_AGENT                   | safe call to navigator.userAgent object (doesn't throw an error if the userAgent doesn't exist)    | 
+ 
 | IS_JSDOM                     | Return Boolean if javascript dom is exist     | 
 | IS_IE                        | Return Boolean if you are in InterntExplore or not       | 
 | HAS_TOUCH_SUPPORT            | Return Boolean if touch support       | 

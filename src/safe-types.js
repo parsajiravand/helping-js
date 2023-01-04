@@ -1,5 +1,9 @@
-import { HAS_WINDOW_SUPPORT, WINDOW } from "./supoort";
+import { HAS_WINDOW_SUPPORT, HAS_DOCUMENT_SUPPORT,HAS_NAVIGATOR_SUPPORT } from "./supoort";
 
+export const WINDOW = HAS_WINDOW_SUPPORT ? window : {}
+export const DOCUMENT = HAS_DOCUMENT_SUPPORT ? document : {}
+export const NAVIGATOR = HAS_NAVIGATOR_SUPPORT ? navigator : {}
+export const USER_AGENT = (NAVIGATOR.userAgent || '').toLowerCase()
 /* istanbul ignore next */
 export const Element = HAS_WINDOW_SUPPORT
   ? WINDOW.Element
