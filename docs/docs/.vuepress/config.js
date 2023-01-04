@@ -13,7 +13,7 @@ export default {
           "Build simple recaptcha for vuejs without need server .",
       },
     },
-    logo: "https://vuejs.org/images/logo.png",
+    logo: "https://i.ibb.co/7RkRvX0/helping-js-icon.png",
     navbar: [
       // NavbarItem
       {
@@ -53,6 +53,14 @@ export default {
       {
         text: "Support",
         link: "/support/",
+      },
+      {
+        text: "SafeType",
+        link: "/safe-type/",
+      },
+      {
+        text: "RegexHelper🚧",
+        link: "/regex/",
       }
     ],
   }),

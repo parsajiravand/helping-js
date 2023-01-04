@@ -1,7 +1,7 @@
 ---
 home: true
 title: Helping JS | Home
-heroImage: https://vuejs.org/images/logo.png
+heroImage: https://i.ibb.co/7RkRvX0/helping-js-icon.png
 heroText: Helping JS
 tagline: Helping JS simple utils for javascript.
 actions:
