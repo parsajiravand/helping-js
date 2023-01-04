@@ -1,9 +1,11 @@
 {
   "name": "helping-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "parsa jiravand",
   "description": "simple utils for javascript",
   "main": "./index.js",
+  "repository": "https://github.com/parsajiravand/helping-js",
+  "homepage": "https://github.com/parsajiravand/helping-js",
   "scripts": {
     "build:es5": "rm -rf core && babel src -d core"
   },
