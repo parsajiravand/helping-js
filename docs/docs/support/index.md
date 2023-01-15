@@ -33,7 +33,6 @@ console.log(HAS_WINDOW_SUPPORT) // true
 | HAS_PROMISE_SUPPORT          | Return Boolean if support Promise        | 
 | HAS_MUTATION_OBSERVER_SUPPORT| Return Boolean if support MutationObserver       | 
 | IS_BROWSER                   | check if you are in browser or server       | 
- 
 | IS_JSDOM                     | Return Boolean if javascript dom is exist     | 
 | IS_IE                        | Return Boolean if you are in InterntExplore or not       | 
 | HAS_TOUCH_SUPPORT            | Return Boolean if touch support       | 
