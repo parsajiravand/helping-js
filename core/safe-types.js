@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.File = exports.SVGElement = exports.HTMLElement = exports.Element = undefined;
+exports.File = exports.SVGElement = exports.HTMLElement = exports.Element = exports.USER_AGENT = exports.NAVIGATOR = exports.DOCUMENT = exports.WINDOW = undefined;
 
 var _supoort = require("./supoort");
 
@@ -13,8 +13,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var WINDOW = exports.WINDOW = _supoort.HAS_WINDOW_SUPPORT ? window : {};
+var DOCUMENT = exports.DOCUMENT = _supoort.HAS_DOCUMENT_SUPPORT ? document : {};
+var NAVIGATOR = exports.NAVIGATOR = _supoort.HAS_NAVIGATOR_SUPPORT ? navigator : {};
+var USER_AGENT = exports.USER_AGENT = (NAVIGATOR.userAgent || '').toLowerCase();
 /* istanbul ignore next */
-var Element = exports.Element = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.Element : function (_Object) {
+var Element = exports.Element = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.Element : function (_Object) {
   _inherits(Element, _Object);
 
   function Element() {
@@ -27,7 +31,7 @@ var Element = exports.Element = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.El
 }(Object);
 
 /* istanbul ignore next */
-var HTMLElement = exports.HTMLElement = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.HTMLElement : function (_Element) {
+var HTMLElement = exports.HTMLElement = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.HTMLElement : function (_Element) {
   _inherits(HTMLElement, _Element);
 
   function HTMLElement() {
@@ -40,7 +44,7 @@ var HTMLElement = exports.HTMLElement = _supoort.HAS_WINDOW_SUPPORT ? _supoort.W
 }(Element);
 
 /* istanbul ignore next */
-var SVGElement = exports.SVGElement = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.SVGElement : function (_Element2) {
+var SVGElement = exports.SVGElement = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.SVGElement : function (_Element2) {
   _inherits(SVGElement, _Element2);
 
   function SVGElement() {
@@ -53,7 +57,7 @@ var SVGElement = exports.SVGElement = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WIN
 }(Element);
 
 /* istanbul ignore next */
-var File = exports.File = _supoort.HAS_WINDOW_SUPPORT ? _supoort.WINDOW.File : function (_Object2) {
+var File = exports.File = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.File : function (_Object2) {
   _inherits(File, _Object2);
 
   function File() {

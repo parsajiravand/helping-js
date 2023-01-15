@@ -1,13 +1,13 @@
 {
   "name": "helping-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "parsa jiravand",
   "description": "simple utils for javascript",
   "main": "./index.js",
   "repository": "https://github.com/parsajiravand/helping-js",
   "homepage": "https://github.com/parsajiravand/helping-js",
   "scripts": {
-    "build:es5": "rm -rf core && babel src -d core"
+    "build": "rm -rf core && babel src -d core"
   },
   "license": "MIT",
   "files": [
@@ -17,5 +17,19 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "uglify-js": "^3.17.4"
-  }
+  },
+  "keywords": [
+    "utility functions",
+    "JavaScript helper library",
+    "common functions",
+    "JavaScript utility belt",
+    "JavaScript helper tools",
+    "JavaScript utility package",
+    "JavaScript functions library",
+    "JavaScript code snippets",
+    "JavaScript toolkit",
+    "JavaScript utility library",
+    "Regex",
+    "Check Types"
+  ]
 }
