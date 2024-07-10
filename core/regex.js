@@ -5,8 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 // --- General ---
 
-var RX_ARRAY_NOTATION = exports.RX_ARRAY_NOTATION = /\[(\d+)]/g;
-var RX_DIGITS = exports.RX_DIGITS = /^\d+$/;
+var RX_ARRAY_NOTATION = exports.RX_ARRAY_NOTATION = /\[(\d+)]/g; //get array notation
+var RX_DIGITS = exports.RX_DIGITS = /^\d+$/; //digits
 var RX_EXTENSION = exports.RX_EXTENSION = /^\..+/; //.test
 var RX_HASH = exports.RX_HASH = /^#/; //#test
 var RX_HASH_ID = exports.RX_HASH_ID = /^#[A-Za-z]+[\w\-:.]*$/; //#test

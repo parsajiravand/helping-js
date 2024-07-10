@@ -70,3 +70,14 @@ import { isString } from 'https://unpkg.com/browse/helping-js/core/types.js'
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
+
+## Regex Usage
+### You can access all regex patterns from the `helping-js/core/regex` module. (More Than 50 Patterns)
+
+Example usage:
+```javascript
+import { RX_HASH } from "helping-js/core/regex";
+const regex = RX_HASH;
+const str = '#test';
+console.log(regex.test(str)); // Output: true
+```

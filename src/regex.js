@@ -1,7 +1,7 @@
 // --- General ---
 
-export const RX_ARRAY_NOTATION = /\[(\d+)]/g
-export const RX_DIGITS = /^\d+$/ 
+export const RX_ARRAY_NOTATION = /\[(\d+)]/g //get array notation
+export const RX_DIGITS = /^\d+$/ //digits
 export const RX_EXTENSION = /^\..+/ //.test
 export const RX_HASH = /^#/ //#test
 export const RX_HASH_ID = /^#[A-Za-z]+[\w\-:.]*$/ //#test

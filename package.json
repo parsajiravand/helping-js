@@ -1,6 +1,6 @@
 {
   "name": "helping-js",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "author": "parsa jiravand",
   "description": "simple utils for javascript",
   "main": "./index.js",
