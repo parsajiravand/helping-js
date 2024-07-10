@@ -59,7 +59,7 @@ export default {
         link: "/safe-type/",
       },
       {
-        text: "RegexHelper🚧",
+        text: "RegexHelper",
         link: "/regex/",
       }
     ],

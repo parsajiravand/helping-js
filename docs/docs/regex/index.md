@@ -1,8 +1,8 @@
 # Regex
 
-### Check Regex Patterns in JavaScript with helping-js.
+Check Regex Patterns in JavaScript with helping-js. 
 
-## 🚀 Features
+##### 🚀 Features
 
 - 🎪 **Regex Patterns**: Check regex patterns in JavaScript
 - 🦾 **Include Most Useful**:  Include most useful regex patterns
@@ -50,7 +50,8 @@ if (RX_HREF.test(value)) {
 }
 ```
 
-## RX_ARRAY_NOTATION
+## Sample
+#### RX_ARRAY_NOTATION
 
 This constant represents a regular expression pattern for checking array notation.
 
@@ -63,7 +64,7 @@ const str = "array[0]";
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_DIGITS
+#### RX_DIGITS
 
 This constant represents a regular expression pattern for checking digits.
 
@@ -76,7 +77,7 @@ const str = "123";
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_EXTENSION
+#### RX_EXTENSION
 
 This constant represents a regular expression pattern for checking file extension.
 
@@ -88,7 +89,7 @@ const str = '.js';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_HASH
+#### RX_HASH
 
 This constant represents a regular expression pattern for checking hash.
 
@@ -100,7 +101,7 @@ const str = '#test';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_HASH_ID
+#### RX_HASH_ID
 
 This constant represents a regular expression pattern for checking hash id.
 
@@ -112,7 +113,7 @@ const str = '#test';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_HTML_TAGS
+#### RX_HTML_TAGS
 
 This constant represents a regular expression pattern for checking HTML tags.
 
@@ -124,7 +125,7 @@ const str = '<div>';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_HYPHENATE
+#### RX_HYPHENATE
 
 This constant represents a regular expression pattern for checking hyphenate.
 
@@ -136,7 +137,7 @@ const str = 'teSt';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_LOWER_UPPER
+#### RX_LOWER_UPPER
 
 This constant represents a regular expression pattern for checking lower upper.
 
@@ -148,7 +149,7 @@ const str = 'testTAt';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_NUMBER
+#### RX_NUMBER
 
 This constant represents a regular expression pattern for checking number.
 
@@ -160,7 +161,7 @@ const str = '123123';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_PLUS
+#### RX_PLUS
 
 This constant represents a regular expression pattern for checking plus.
 
@@ -172,7 +173,7 @@ const str = '+';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_REGEXP_REPLACE
+#### RX_REGEXP_REPLACE
 
 This constant represents a regular expression pattern for checking regexp replace.
 
@@ -184,7 +185,7 @@ const str = '[-/\\^$*+?.()|[\]{}]';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_SPACES
+#### RX_SPACES
 
 This constant represents a regular expression pattern for checking spaces.
 
@@ -196,7 +197,7 @@ const str = '[\s\uFEFF\xA0]';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_SPACE_SPLIT
+#### RX_SPACE_SPLIT
 
 This constant represents a regular expression pattern for checking space split.
 
@@ -208,7 +209,7 @@ const str = '\s+';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_START_SPACE_WORD
+#### RX_START_SPACE_WORD
 
 This constant represents a regular expression pattern for checking start space word.
 
@@ -220,7 +221,7 @@ const str = 'test';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_TRIM_LEFT
+#### RX_TRIM_LEFT
 
 This constant represents a regular expression pattern for checking trim left.
 
@@ -232,7 +233,7 @@ const str = '\s+';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_TRIM_RIGHT
+#### RX_TRIM_RIGHT
 
 This constant represents a regular expression pattern for checking trim right.
 
@@ -244,7 +245,7 @@ const str = '\s+';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_UNDERSCORE
+#### RX_UNDERSCORE
 
 This constant represents a regular expression pattern for checking underscore.
 
@@ -256,7 +257,7 @@ const str = '\_';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_UN_KEBAB
+#### RX_UN_KEBAB
 
 This constant represents a regular expression pattern for checking un kebab.
 
@@ -268,7 +269,7 @@ const str = '-+charchter charchter';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_DATE
+#### RX_DATE
 
 This constant represents a regular expression pattern for checking date.
 
@@ -280,7 +281,7 @@ const str = '1999-01-20T22:51:49.118Z';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_TIME
+#### RX_TIME
 
 This constant represents a regular expression pattern for checking time.
 
@@ -292,7 +293,7 @@ const str = '13:00:00';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_HREF
+#### RX_HREF
 
 This constant represents a regular expression pattern for checking href.
 
@@ -304,7 +305,7 @@ const str = 'www.google.com';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_ENCODED_COMMA
+#### RX_ENCODED_COMMA
 
 This constant represents a regular expression pattern for checking encoded comma.
 
@@ -316,7 +317,7 @@ const str = '%2C';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_ENCODE_REVERSE
+#### RX_ENCODE_REVERSE
 
 This constant represents a regular expression pattern for checking encode reverse.
 
@@ -328,7 +329,7 @@ const str = '!';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_QUERY_START
+#### RX_QUERY_START
 
 This constant represents a regular expression pattern for checking query start.
 
@@ -340,7 +341,7 @@ const str = '?';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_ASPECT
+#### RX_ASPECT
 
 This constant represents a regular expression pattern for checking aspect.
 
@@ -352,7 +353,7 @@ const str = '1:1';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_ASPECT_SEPARATOR
+#### RX_ASPECT_SEPARATOR
 
 This constant represents a regular expression pattern for checking aspect separator.
 
@@ -364,7 +365,7 @@ const str = ':';
 console.log(regex.test(str)); // Output: true
 ```
 
-## RX_STRIP_LOCALE_MODS
+#### RX_STRIP_LOCALE_MODS
 
 This constant represents a regular expression pattern for checking strip locale mods.
 
