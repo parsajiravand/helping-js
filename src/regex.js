@@ -9,6 +9,7 @@ export const RX_HTML_TAGS = /(<([^>]+)>)/gi //<div>
 export const RX_HYPHENATE = /\B([A-Z])/g //teSt
 export const RX_LOWER_UPPER = /([a-z])([A-Z])/g //testTAt lower befoer upper
 export const RX_NUMBER = /^[0-9]*\.?[0-9]+$/ //123123 just number
+export const RX_FLOAT_NUMBER = /^\d+(\.\d+)?$|^\d+\.$/ //123.123
 export const RX_PLUS = /\+/g //get plus
 export const RX_REGEXP_REPLACE = /[-/\\^$*+?.()|[\]{}]/g //check [-/\\^$*+?.()|[\]{}]
 export const RX_SPACES = /[\s\uFEFF\xA0]+/g //get spaces

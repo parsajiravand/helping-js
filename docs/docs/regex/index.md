@@ -1,11 +1,11 @@
 # Regex
 
-Check Regex Patterns in JavaScript with helping-js. 
+Check Regex Patterns in JavaScript with helping-js.
 
 ##### 🚀 Features
 
 - 🎪 **Regex Patterns**: Check regex patterns in JavaScript
-- 🦾 **Include Most Useful**:  Include most useful regex patterns
+- 🦾 **Include Most Useful**: Include most useful regex patterns
 - 🌎 **No bundler required**: Usable via CDN
 - 🔩 **Flexible**: Configurable event filters and targets
 
@@ -51,6 +51,7 @@ if (RX_HREF.test(value)) {
 ```
 
 ## Sample
+
 #### RX_ARRAY_NOTATION
 
 This constant represents a regular expression pattern for checking array notation.
@@ -82,10 +83,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking file extension.
 
 Example usage:
+
 ```javascript
 import { RX_EXTENSION } from "helping-js/core/regex";
 const regex = RX_EXTENSION;
-const str = '.js';
+const str = ".js";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -94,10 +96,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking hash.
 
 Example usage:
+
 ```javascript
 import { RX_HASH } from "helping-js/core/regex";
 const regex = RX_HASH;
-const str = '#test';
+const str = "#test";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -106,10 +109,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking hash id.
 
 Example usage:
+
 ```javascript
 import { RX_HASH_ID } from "helping-js/core/regex";
 const regex = RX_HASH_ID;
-const str = '#test';
+const str = "#test";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -118,10 +122,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking HTML tags.
 
 Example usage:
+
 ```javascript
 import { RX_HTML_TAGS } from "helping-js/core/regex";
 const regex = RX_HTML_TAGS;
-const str = '<div>';
+const str = "<div>";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -130,10 +135,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking hyphenate.
 
 Example usage:
+
 ```javascript
 import { RX_HYPHENATE } from "helping-js/core/regex";
 const regex = RX_HYPHENATE;
-const str = 'teSt';
+const str = "teSt";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -142,10 +148,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking lower upper.
 
 Example usage:
+
 ```javascript
 import { RX_LOWER_UPPER } from "helping-js/core/regex";
 const regex = RX_LOWER_UPPER;
-const str = 'testTAt';
+const str = "testTAt";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -154,11 +161,31 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking number.
 
 Example usage:
+
 ```javascript
 import { RX_NUMBER } from "helping-js/core/regex";
 const regex = RX_NUMBER;
-const str = '123123';
+const str = "123123";
 console.log(regex.test(str)); // Output: true
+```
+
+#### RX_FLOAT_NUMBER
+
+This constant represents a regular expression pattern for checking float number.
+
+Example usage:
+
+```javascript
+import { RX_FLOAT_NUMBER } from "helping-js/core/regex";
+const regex = RX_FLOAT_NUMBER;
+console.log(regex.test("123.123")); // Output: true
+console.log(regex.test("60")); // Output:  true
+console.log(regex.test("60.5")); // Output:  true
+console.log(regex.test("60.")); // Output:  true
+console.log(regex.test(".5")); // Output:  false
+console.log(regex.test("abc")); // Output:  false
+console.log(regex.test("123.456")); // Output:  true
+console.log(regex.test("0.456")); // Output:  true
 ```
 
 #### RX_PLUS
@@ -166,10 +193,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking plus.
 
 Example usage:
+
 ```javascript
 import { RX_PLUS } from "helping-js/core/regex";
 const regex = RX_PLUS;
-const str = '+';
+const str = "+";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -178,10 +206,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking regexp replace.
 
 Example usage:
+
 ```javascript
 import { RX_REGEXP_REPLACE } from "helping-js/core/regex";
 const regex = RX_REGEXP_REPLACE;
-const str = '[-/\\^$*+?.()|[\]{}]';
+const str = "[-/\\^$*+?.()|[]{}]";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -190,10 +219,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking spaces.
 
 Example usage:
+
 ```javascript
 import { RX_SPACES } from "helping-js/core/regex";
 const regex = RX_SPACES;
-const str = '[\s\uFEFF\xA0]';
+const str = "[s\uFEFF\xA0]";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -202,10 +232,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking space split.
 
 Example usage:
+
 ```javascript
 import { RX_SPACE_SPLIT } from "helping-js/core/regex";
 const regex = RX_SPACE_SPLIT;
-const str = '\s+';
+const str = "s+";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -214,10 +245,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking start space word.
 
 Example usage:
+
 ```javascript
 import { RX_START_SPACE_WORD } from "helping-js/core/regex";
 const regex = RX_START_SPACE_WORD;
-const str = 'test';
+const str = "test";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -226,10 +258,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking trim left.
 
 Example usage:
+
 ```javascript
 import { RX_TRIM_LEFT } from "helping-js/core/regex";
 const regex = RX_TRIM_LEFT;
-const str = '\s+';
+const str = "s+";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -238,10 +271,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking trim right.
 
 Example usage:
+
 ```javascript
 import { RX_TRIM_RIGHT } from "helping-js/core/regex";
 const regex = RX_TRIM_RIGHT;
-const str = '\s+';
+const str = "s+";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -250,10 +284,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking underscore.
 
 Example usage:
+
 ```javascript
 import { RX_UNDERSCORE } from "helping-js/core/regex";
 const regex = RX_UNDERSCORE;
-const str = '\_';
+const str = "_";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -262,10 +297,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking un kebab.
 
 Example usage:
+
 ```javascript
 import { RX_UN_KEBAB } from "helping-js/core/regex";
 const regex = RX_UN_KEBAB;
-const str = '-+charchter charchter';
+const str = "-+charchter charchter";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -274,10 +310,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking date.
 
 Example usage:
+
 ```javascript
 import { RX_DATE } from "helping-js/core/regex";
 const regex = RX_DATE;
-const str = '1999-01-20T22:51:49.118Z';
+const str = "1999-01-20T22:51:49.118Z";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -286,10 +323,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking time.
 
 Example usage:
+
 ```javascript
 import { RX_TIME } from "helping-js/core/regex";
 const regex = RX_TIME;
-const str = '13:00:00';
+const str = "13:00:00";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -298,10 +336,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking href.
 
 Example usage:
+
 ```javascript
 import { RX_HREF } from "helping-js/core/regex";
 const regex = RX_HREF;
-const str = 'www.google.com';
+const str = "www.google.com";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -310,10 +349,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking encoded comma.
 
 Example usage:
+
 ```javascript
 import { RX_ENCODED_COMMA } from "helping-js/core/regex";
 const regex = RX_ENCODED_COMMA;
-const str = '%2C';
+const str = "%2C";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -322,10 +362,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking encode reverse.
 
 Example usage:
+
 ```javascript
 import { RX_ENCODE_REVERSE } from "helping-js/core/regex";
 const regex = RX_ENCODE_REVERSE;
-const str = '!';
+const str = "!";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -334,10 +375,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking query start.
 
 Example usage:
+
 ```javascript
 import { RX_QUERY_START } from "helping-js/core/regex";
 const regex = RX_QUERY_START;
-const str = '?';
+const str = "?";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -346,10 +388,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking aspect.
 
 Example usage:
+
 ```javascript
 import { RX_ASPECT } from "helping-js/core/regex";
 const regex = RX_ASPECT;
-const str = '1:1';
+const str = "1:1";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -358,10 +401,11 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking aspect separator.
 
 Example usage:
+
 ```javascript
 import { RX_ASPECT_SEPARATOR } from "helping-js/core/regex";
 const regex = RX_ASPECT_SEPARATOR;
-const str = ':';
+const str = ":";
 console.log(regex.test(str)); // Output: true
 ```
 
@@ -370,9 +414,10 @@ console.log(regex.test(str)); // Output: true
 This constant represents a regular expression pattern for checking strip locale mods.
 
 Example usage:
+
 ```javascript
 import { RX_STRIP_LOCALE_MODS } from "helping-js/core/regex";
 const regex = RX_STRIP_LOCALE_MODS;
-const str = '-u-';
+const str = "-u-";
 console.log(regex.test(str)); // Output: true
 ```

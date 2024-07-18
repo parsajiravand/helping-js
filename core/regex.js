@@ -14,6 +14,7 @@ var RX_HTML_TAGS = exports.RX_HTML_TAGS = /(<([^>]+)>)/gi; //<div>
 var RX_HYPHENATE = exports.RX_HYPHENATE = /\B([A-Z])/g; //teSt
 var RX_LOWER_UPPER = exports.RX_LOWER_UPPER = /([a-z])([A-Z])/g; //testTAt lower befoer upper
 var RX_NUMBER = exports.RX_NUMBER = /^[0-9]*\.?[0-9]+$/; //123123 just number
+var RX_FLOAT_NUMBER = exports.RX_FLOAT_NUMBER = /^\d+(\.\d+)?$|^\d+\.$/; //123.123
 var RX_PLUS = exports.RX_PLUS = /\+/g; //get plus
 var RX_REGEXP_REPLACE = exports.RX_REGEXP_REPLACE = /[-/\\^$*+?.()|[\]{}]/g; //check [-/\\^$*+?.()|[\]{}]
 var RX_SPACES = exports.RX_SPACES = /[\s\uFEFF\xA0]+/g; //get spaces
