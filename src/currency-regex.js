@@ -1,0 +1,41 @@
+// --- Currency ---
+
+// Currency format (USD)
+export const RX_CURRENCY_USD = /^\$?\d{1,3}(,\d{3})*(\.\d{2})?$/;
+export const RX_CURRENCY_EUR = /^\d{1,3}(.\d{3})*(,\d{2})?€$/;
+export const RX_CURRENCY_GBP = /^\d{1,3}(,\d{3})*(.\d{2})?£$/;
+export const RX_CURRENCY_JPY = /^¥\d{1,3}(,\d{3})*$/;
+export const RX_CURRENCY_CNY = /^¥\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_KRW = /^₩\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_INR = /^₹\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_RUB = /^\d{1,3}(,\d{3})*(.\d{2})?₽$/;
+export const RX_CURRENCY_BRL = /^R\$\d{1,3}(.\d{3})*(,\d{2})?$/;
+export const RX_CURRENCY_AUD = /^\$\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_CAD = /^\$\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_CHF = /^CHF\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_SEK = /^kr\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_NOK = /^kr\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_DKK = /^kr\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_HKD = /^HK\$\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_TWD = /^NT\$\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_SGD = /^S\$\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_MYR = /^RM\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_PHP = /^₱\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_IDR = /^Rp\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_VND = /^₫\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_THB = /^฿\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_TRY = /^₺\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_ZAR = /^R\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_NZD = /^NZ\$\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_ILS = /^₪\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_EGP = /^E£\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_KWD = /^KD\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_AED = /^د.إ\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_SAR = /^SR\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_CZK = /^Kč\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_PLN = /^zł\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_HUF = /^Ft\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_RON = /^lei\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_BGN = /^лв\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_HRK = /^kn\d{1,3}(,\d{3})*(.\d{2})?$/;
+export const RX_CURRENCY_ISK = /^kr\d{1,3}(,\d{3})*(.\d{2})?$/;
