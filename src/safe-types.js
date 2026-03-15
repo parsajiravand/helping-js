@@ -1,13 +1,11 @@
-import { HAS_WINDOW_SUPPORT, HAS_DOCUMENT_SUPPORT,HAS_NAVIGATOR_SUPPORT } from "./supoort";
+import { HAS_WINDOW_SUPPORT, HAS_DOCUMENT_SUPPORT, HAS_NAVIGATOR_SUPPORT } from './support';
 
-export const WINDOW = HAS_WINDOW_SUPPORT ? window : {}
-export const DOCUMENT = HAS_DOCUMENT_SUPPORT ? document : {}
-export const NAVIGATOR = HAS_NAVIGATOR_SUPPORT ? navigator : {}
-export const USER_AGENT = (NAVIGATOR.userAgent || '').toLowerCase()
+export const WINDOW = HAS_WINDOW_SUPPORT ? window : {};
+export const DOCUMENT = HAS_DOCUMENT_SUPPORT ? document : {};
+export const NAVIGATOR = HAS_NAVIGATOR_SUPPORT ? navigator : {};
+export const USER_AGENT = (NAVIGATOR.userAgent || '').toLowerCase();
 /* istanbul ignore next */
-export const Element = HAS_WINDOW_SUPPORT
-  ? WINDOW.Element
-  : class Element extends Object {};
+export const Element = HAS_WINDOW_SUPPORT ? WINDOW.Element : class Element extends Object {};
 
 /* istanbul ignore next */
 export const HTMLElement = HAS_WINDOW_SUPPORT
@@ -20,6 +18,4 @@ export const SVGElement = HAS_WINDOW_SUPPORT
   : class SVGElement extends Element {};
 
 /* istanbul ignore next */
-export const File = HAS_WINDOW_SUPPORT
-  ? WINDOW.File
-  : class File extends Object {};
+export const File = HAS_WINDOW_SUPPORT ? WINDOW.File : class File extends Object {};

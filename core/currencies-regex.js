@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.RX_CURRENCY_ZAR = exports.RX_CURRENCY_VND = exports.RX_CURRENCY_USD = exports.RX_CURRENCY_TWD = exports.RX_CURRENCY_TRY = exports.RX_CURRENCY_THB = exports.RX_CURRENCY_SGD = exports.RX_CURRENCY_SEK = exports.RX_CURRENCY_SAR = exports.RX_CURRENCY_RUB = exports.RX_CURRENCY_RON = exports.RX_CURRENCY_PLN = exports.RX_CURRENCY_PHP = exports.RX_CURRENCY_NZD = exports.RX_CURRENCY_NOK = exports.RX_CURRENCY_MYR = exports.RX_CURRENCY_KWD = exports.RX_CURRENCY_KRW = exports.RX_CURRENCY_JPY = exports.RX_CURRENCY_ISK = exports.RX_CURRENCY_INR = exports.RX_CURRENCY_ILS = exports.RX_CURRENCY_IDR = exports.RX_CURRENCY_HUF = exports.RX_CURRENCY_HRK = exports.RX_CURRENCY_HKD = exports.RX_CURRENCY_GBP = exports.RX_CURRENCY_EUR = exports.RX_CURRENCY_EGP = exports.RX_CURRENCY_DKK = exports.RX_CURRENCY_CZK = exports.RX_CURRENCY_CNY = exports.RX_CURRENCY_CHF = exports.RX_CURRENCY_CAD = exports.RX_CURRENCY_BRL = exports.RX_CURRENCY_BGN = exports.RX_CURRENCY_AUD = exports.RX_CURRENCY_AED = void 0;
 // --- Currency ---
 
 // Currency format (USD)

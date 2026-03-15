@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/parsajiravand/helping-js"><img src="https://i.ibb.co/7RkRvX0/helping-js-icon.png" alt="Demo" width="160"></a>
   <h2 align="center">helping-js</h2>
-  <p align="center">simple utils for javascriptr</p>
+  <p align="center">simple utils for javascript</p>
 </p>
 
 <p align="center">
@@ -23,8 +23,8 @@
   <a href="https://github.com/parsajiravand/helping-js/blob/master/package.json">
     <img src="https://img.shields.io/badge/dependencies-none-lightgrey.svg?style=flat-square" alt="no dependencies">
   </a>
-  <a href="https://travis-ci.org/parsajiravand/helping-js">
-    <img src="https://img.shields.io/travis/parsajiravand/helping-js.svg?style=flat-square" alt="travis">
+  <a href="https://github.com/parsajiravand/helping-js/actions">
+    <img src="https://github.com/parsajiravand/helping-js/actions/workflows/ci.yml/badge.svg" alt="CI">
   </a>
 </p>
 
@@ -65,7 +65,7 @@ console.log(isString(true)) // false
 ```
 3. You can usage from CDN (only modules)
 ```javascript
-import { isString } from 'https://unpkg.com/browse/helping-js/core/types.js'
+import { isString } from 'https://unpkg.com/helping-js/core/types.js'
 
 console.log(isString('test')) // true
 console.log(isString(true)) // false
