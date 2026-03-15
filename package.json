@@ -12,7 +12,10 @@
     "./core/phones-regex": "./core/phones-regex.js",
     "./core/currencies-regex": "./core/currencies-regex.js",
     "./core/safe-types": "./core/safe-types.js",
-    "./core/support": "./core/support.js"
+    "./core/support": "./core/support.js",
+    "./core/validate": "./core/validate.js",
+    "./preset/form": "./core/preset/form.js",
+    "./core/preset/form": "./core/preset/form.js"
   },
   "repository": "https://github.com/parsajiravand/helping-js",
   "homepage": "https://github.com/parsajiravand/helping-js",

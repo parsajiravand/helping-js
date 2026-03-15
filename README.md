@@ -76,6 +76,36 @@ console.log(isString(true)) // false
 
 4. TypeScript: the package includes `.d.ts` files; types work automatically when you import from `helping-js/core/*`.
 
+## Validate forms
+
+Lightweight validation without validator.js: use `validate(obj, rules)` with RegExp or predicate functions.
+
+```javascript
+import { validate, RX_EMAIL, isNumber } from 'helping-js/preset/form';
+
+const result = validate(
+  { email: 'user@example.com', age: 25 },
+  { email: RX_EMAIL, age: isNumber }
+);
+// result.valid === true, result.errors === {}
+
+// Or import only validate and use your own rules:
+import { validate } from 'helping-js/core/validate';
+import { RX_EMAIL } from 'helping-js/core/regex';
+```
+
+Rules can be a **RegExp** (tests `String(value)`) or a **function** `(value) => boolean`. Returns `{ valid: true, errors: {} }` or `{ valid: false, errors: { field: false, ... } }`.
+
+## Usage in your project
+
+No extra config; install and import.
+
+- **Node (CJS):** `const { isString } = require('helping-js/core/types');`
+- **Node (ESM):** `import { isString } from 'helping-js/core/types';` (use `"type": "module"` in package.json or `.mjs` extension).
+- **Vite:** `import { isString } from 'helping-js/core/types';`
+- **Next.js:** `import { isString } from 'helping-js/core/types';` (client or server).
+- **Create React App:** `import { isString } from 'helping-js/core/types';`
+
 ## Regex Usage
 ### You can access all regex patterns from the `helping-js/core/regex` module. (More Than 50 Patterns)
 

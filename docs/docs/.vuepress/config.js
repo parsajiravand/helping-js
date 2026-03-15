@@ -50,6 +50,14 @@ export default {
         link: "/usage/",
       },
       {
+        text: "Setup",
+        link: "/setup/",
+      },
+      {
+        text: "Form validation",
+        link: "/form-validation/",
+      },
+      {
         text: "Types",
         link: "/types/",
       },
@@ -72,6 +80,14 @@ export default {
       {
         text: "Currency Regex Helper",
         link: "/currency-regex/",
+      },
+      {
+        text: "Form validation",
+        link: "/form-validation/",
+      },
+      {
+        text: "Setup",
+        link: "/setup/",
       },
       {
         text: "Changelog",
