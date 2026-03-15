@@ -82,14 +82,6 @@ export default {
         link: "/currency-regex/",
       },
       {
-        text: "Form validation",
-        link: "/form-validation/",
-      },
-      {
-        text: "Setup",
-        link: "/setup/",
-      },
-      {
         text: "Changelog",
         link: "https://github.com/parsajiravand/helping-js/blob/master/CHANGELOG.md",
       },

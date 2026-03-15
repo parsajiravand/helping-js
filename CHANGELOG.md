@@ -9,9 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **TypeScript support**: Declaration files (`.d.ts`) for all public modules (`core/types`, `core/regex`, `core/support`, `core/safe-types`, `core/phones-regex`, `core/currencies-regex`). The package includes a `types` field for IDE and TypeScript consumers.
+- **TypeScript support**: Declaration files (`.d.ts`) for all public modules (`core/types`, `core/regex`, `core/support`, `core/safe-types`, `core/phones-regex`, `core/currencies-regex`, `core/validate`, `preset/form`). The package includes a `types` field for IDE and TypeScript consumers.
 - **Package exports**: Proper `exports` field in `package.json` for subpath resolution (`helping-js/core/types`, `helping-js/core/regex`, etc.) so Node and bundlers resolve entry points correctly.
-- **Testing**: Jest-based test suite with 45+ unit tests for type checkers, regex patterns, and support flags. Run with `npm test`.
+- **Schema/rule-based validation**: `validate(obj, rules)` in `helping-js/core/validate`. Rules can be a RegExp or a function `(value) => boolean`. Returns `{ valid, errors }`. No dependencies; uses existing types and regex.
+- **Form preset**: `helping-js/preset/form` (and `helping-js/core/preset/form`) re-exports type checkers (`isString`, `isNumber`, `isNumeric`, etc.), `RX_EMAIL`, `RX_URL`, `RX_PHONE`, and `validate` for one-line form validation setup.
+- **Form validation docs**: New “Form validation” doc page with Vue 3 and React examples using `validate()` and the form preset.
+- **Setup / Usage in your project docs**: Expanded “Setup” documentation with many examples per stack: Node (CJS and ESM), Express (routes and middleware), Vue 3 (Composition API, Options API, full form), React (hooks, class component, full form), Vite, Next.js (API routes and client components), Create React App, and CDN. Multiple samples per section (imports, type checkers, validate, regex, preset).
+- **Testing**: Jest-based test suite with 50+ unit tests for type checkers, regex patterns, support flags, and `validate()`. Run with `npm test`.
 - **Linting and formatting**: ESLint and Prettier for `src/`, with `npm run lint` and `npm run format` scripts.
 - **CI**: GitHub Actions workflow (`.github/workflows/ci.yml`) that runs lint, test, and build on push and pull requests.
 
