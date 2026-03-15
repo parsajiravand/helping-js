@@ -7,7 +7,7 @@ Currency Regex is a collection of regular expressions for validating currency fo
 1. You can import in your js file es6 (modules,vue,react,...)
 
 ```javascript
-import { RX_CURRENCY_EUR } from "helping-js/core/currencies-regex"; // Check URL
+import { RX_CURRENCY_EUR } from "helping-js/core/currencies-regex";
 
 const value = "1.000,00€";
 if (RX_CURRENCY_EUR.test(value)) {
@@ -20,7 +20,7 @@ if (RX_CURRENCY_EUR.test(value)) {
 2. You can import in your js file es5 (nodejs)
 
 ```javascript
-const { RX_CURRENCY_EUR } = require("helping-js/core/currencies-regex"); // Check URL
+const { RX_CURRENCY_EUR } = require("helping-js/core/currencies-regex");
 
 const value = "1.000,00€";
 if (RX_CURRENCY_EUR.test(value)) {
@@ -30,10 +30,10 @@ if (RX_CURRENCY_EUR.test(value)) {
 }
 ```
 
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only)
 
 ```javascript
-import { RX_CURRENCY_EUR } from "https://unpkg.com/browse/helping-js/core/currencies-regex.js";
+import { RX_CURRENCY_EUR } from "https://unpkg.com/helping-js/core/currencies-regex.js";
 
 const value = "+98123456789";
 if (RX_CURRENCY_EUR.test(value)) {

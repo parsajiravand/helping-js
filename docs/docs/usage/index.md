@@ -1,11 +1,8 @@
 # Usage
 
-Simple utils for javascript
+Simple utils for JavaScript: type checkers, regex patterns, and environment support flags.
 
-vue-client-recaptcha is a vannila-javascript with **no external depenendcies** which simplifies method
-and usable variables,with supported es5 and new feature from javascript.
-
-
+**helping-js** is vanilla JavaScript with **no external dependencies**. It supports ES5 (CommonJS) and ES modules, and works in Node and browsers.
 
 ## Installation
 ```bash
@@ -30,10 +27,12 @@ var { isString } = require('helping-js/core/types')
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only). For production, pin a version: `https://unpkg.com/helping-js@2/core/types.js`
 ```javascript
-import { isString } from 'https://unpkg.com/browse/helping-js/core/types.js'
+import { isString } from 'https://unpkg.com/helping-js/core/types.js'
 
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
+
+4. **TypeScript**: The package ships with declaration files (`.d.ts`). Import from `helping-js/core/types` (or other subpaths) and you get full type checking.

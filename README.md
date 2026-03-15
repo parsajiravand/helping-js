@@ -31,11 +31,14 @@
 <p align="center">
   <br>
   <strong>
-  <a style="font-size:24px" href="https://helping-js.netlify.app/usage/#installation"> 📚Document</a> ・
+  <a style="font-size:24px" href="https://helping-js.netlify.app/usage/#installation"> 📚 Document</a> ・
   <a style="font-size:24px" href="https://helping-js.netlify.app/usage/#installation">🔎 Demos</a> ・
-  <a style="font-size:24px" href="https://helping-js.netlify.app/usage/#installation"> 🔬 Playground</a>
+  <a style="font-size:24px" href="https://helping-js.netlify.app/usage/#installation"> 🔬 Playground</a> ・
+  <a style="font-size:24px" href="https://github.com/parsajiravand/helping-js/blob/master/CHANGELOG.md"> 📋 Changelog</a>
   </strong>
 </p>
+
+**v2** adds TypeScript types, proper package exports, tests, lint/format, and CI. See [CHANGELOG.md](CHANGELOG.md) for details.
 
 ## Dependencies
 - No need Dependency
@@ -63,13 +66,15 @@ var { isString } = require('helping-js/core/types')
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only). Pin a version for production: `https://unpkg.com/helping-js@2/core/types.js`
 ```javascript
 import { isString } from 'https://unpkg.com/helping-js/core/types.js'
 
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
+
+4. TypeScript: the package includes `.d.ts` files; types work automatically when you import from `helping-js/core/*`.
 
 ## Regex Usage
 ### You can access all regex patterns from the `helping-js/core/regex` module. (More Than 50 Patterns)

@@ -16,7 +16,7 @@ var { HAS_WINDOW_SUPPORT } = require('helping-js/core/support')
 
 console.log(HAS_WINDOW_SUPPORT) // true
 ```
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only)
 ```javascript
 import { HAS_WINDOW_SUPPORT } from 'https://unpkg.com/helping-js/core/support.js'
 

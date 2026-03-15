@@ -18,9 +18,9 @@ var { isString } = require('helping-js/core/types')
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only)
 ```javascript
-import { isString } from 'https://unpkg.com/browse/helping-js/core/types.js'
+import { isString } from 'https://unpkg.com/helping-js/core/types.js'
 
 console.log(isString('test')) // true
 console.log(isString(true)) // false
@@ -38,7 +38,7 @@ console.log(isString(true)) // false
 | isEmptyString              | Check EmptyString      | 
 | isUndefinedOrNull          | Check UndefinedOrNull Type       | 
 | isUndefinedOrNullOrEmpty   | Check UndefinedOrNullOrEmpty  Type       | 
-| isFunction                 | Check Fcuntion Type       | 
+| isFunction                 | Check Function Type       | 
 | isBoolean                  | Check Boolean Type       | 
 | isString                   | Check String Type       | 
 | isNumber                   | Check Number Type       | 
