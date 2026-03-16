@@ -12,7 +12,7 @@ export default {
         description: "Simple utils for JavaScript — type checkers, regex patterns, and environment support.",
       },
     },
-    logo: "https://i.ibb.co/7RkRvX0/helping-js-icon.png",
+    logo: "https://i.ibb.co/JRs0Pzv1/helping-js.png",
     navbar: [
       // NavbarItem
       {

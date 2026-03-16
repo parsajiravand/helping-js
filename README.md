@@ -1,7 +1,7 @@
 
 <br>
 <p align="center">
-  <a href="https://github.com/parsajiravand/helping-js"><img src="https://i.ibb.co/7RkRvX0/helping-js-icon.png" alt="Demo" width="160"></a>
+  <a href="https://github.com/parsajiravand/helping-js"><img src="https://i.ibb.co/JRs0Pzv1/helping-js.png" alt="Demo" width="160"></a>
   <h2 align="center">helping-js</h2>
   <p align="center">simple utils for javascript</p>
 </p>
