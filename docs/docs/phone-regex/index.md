@@ -1,12 +1,12 @@
 # Phone Regex
-<!-- descirption -->
-Phone number regex for different countries.
+
+Phone number regex patterns for different countries.
 ## Usage
 
 1. You can import in your js file es6 (modules,vue,react,...)
 
 ```javascript
-import { RX_PHONE_IR } from "helping-js/core/phones-regex"; // Check URL
+import { RX_PHONE_IR } from "helping-js/core/phones-regex";
 
 const value = "+98123456789";
 if (RX_PHONE_IR.test(value)) {
@@ -19,7 +19,7 @@ if (RX_PHONE_IR.test(value)) {
 2. You can import in your js file es5 (nodejs)
 
 ```javascript
-const { RX_PHONE_IR } = require("helping-js/core/phones-regex"); // Check URL
+const { RX_PHONE_IR } = require("helping-js/core/phones-regex");
 
 const value = "+98123456789";
 if (RX_PHONE_IR.test(value)) {
@@ -29,10 +29,10 @@ if (RX_PHONE_IR.test(value)) {
 }
 ```
 
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only)
 
 ```javascript
-import { RX_PHONE_IR } from "https://unpkg.com/browse/helping-js/core/phones-regex.js";
+import { RX_PHONE_IR } from "https://unpkg.com/helping-js/core/phones-regex.js";
 
 const value = "+98123456789";
 if (RX_PHONE_IR.test(value)) {

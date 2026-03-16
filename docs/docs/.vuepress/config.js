@@ -8,8 +8,8 @@ export default {
     locales: {
       "/": {
         lang: "en-US",
-        title: "Vue Client Recaptcha",
-        description: "Build simple recaptcha for vuejs without need server .",
+        title: "Helping JS",
+        description: "Simple utils for JavaScript — type checkers, regex patterns, and environment support.",
       },
     },
     logo: "https://i.ibb.co/7RkRvX0/helping-js-icon.png",
@@ -38,12 +38,24 @@ export default {
         text: "Npm",
         link: "https://www.npmjs.com/package/helping-js",
       },
+      {
+        text: "Changelog",
+        link: "https://github.com/parsajiravand/helping-js/blob/master/CHANGELOG.md",
+      },
     ],
     sidebar: [
       // NavbarItem
       {
         text: "Usage",
         link: "/usage/",
+      },
+      {
+        text: "Setup",
+        link: "/setup/",
+      },
+      {
+        text: "Form validation",
+        link: "/form-validation/",
       },
       {
         text: "Types",
@@ -68,6 +80,10 @@ export default {
       {
         text: "Currency Regex Helper",
         link: "/currency-regex/",
+      },
+      {
+        text: "Changelog",
+        link: "https://github.com/parsajiravand/helping-js/blob/master/CHANGELOG.md",
       },
     ],
   }),

@@ -1,70 +1,66 @@
 "use strict";
 
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.File = exports.SVGElement = exports.HTMLElement = exports.Element = exports.USER_AGENT = exports.NAVIGATOR = exports.DOCUMENT = exports.WINDOW = undefined;
-
-var _supoort = require("./supoort");
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var WINDOW = exports.WINDOW = _supoort.HAS_WINDOW_SUPPORT ? window : {};
-var DOCUMENT = exports.DOCUMENT = _supoort.HAS_DOCUMENT_SUPPORT ? document : {};
-var NAVIGATOR = exports.NAVIGATOR = _supoort.HAS_NAVIGATOR_SUPPORT ? navigator : {};
+exports.WINDOW = exports.USER_AGENT = exports.SVGElement = exports.NAVIGATOR = exports.HTMLElement = exports.File = exports.Element = exports.DOCUMENT = void 0;
+var _support = require("./support");
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
+function _possibleConstructorReturn(t, e) { if (e && ("object" == _typeof(e) || "function" == typeof e)) return e; if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined"); return _assertThisInitialized(t); }
+function _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return e; }
+function _inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && _setPrototypeOf(t, e); }
+function _wrapNativeSuper(t) { var r = "function" == typeof Map ? new Map() : void 0; return _wrapNativeSuper = function _wrapNativeSuper(t) { if (null === t || !_isNativeFunction(t)) return t; if ("function" != typeof t) throw new TypeError("Super expression must either be null or a function"); if (void 0 !== r) { if (r.has(t)) return r.get(t); r.set(t, Wrapper); } function Wrapper() { return _construct(t, arguments, _getPrototypeOf(this).constructor); } return Wrapper.prototype = Object.create(t.prototype, { constructor: { value: Wrapper, enumerable: !1, writable: !0, configurable: !0 } }), _setPrototypeOf(Wrapper, t); }, _wrapNativeSuper(t); }
+function _construct(t, e, r) { if (_isNativeReflectConstruct()) return Reflect.construct.apply(null, arguments); var o = [null]; o.push.apply(o, e); var p = new (t.bind.apply(t, o))(); return r && _setPrototypeOf(p, r.prototype), p; }
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
+function _isNativeFunction(t) { try { return -1 !== Function.toString.call(t).indexOf("[native code]"); } catch (n) { return "function" == typeof t; } }
+function _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }
+function _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }
+var WINDOW = exports.WINDOW = _support.HAS_WINDOW_SUPPORT ? window : {};
+var DOCUMENT = exports.DOCUMENT = _support.HAS_DOCUMENT_SUPPORT ? document : {};
+var NAVIGATOR = exports.NAVIGATOR = _support.HAS_NAVIGATOR_SUPPORT ? navigator : {};
 var USER_AGENT = exports.USER_AGENT = (NAVIGATOR.userAgent || '').toLowerCase();
 /* istanbul ignore next */
-var Element = exports.Element = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.Element : function (_Object) {
-  _inherits(Element, _Object);
-
+var Element = exports.Element = _support.HAS_WINDOW_SUPPORT ? WINDOW.Element : /*#__PURE__*/function (_Object) {
   function Element() {
     _classCallCheck(this, Element);
-
-    return _possibleConstructorReturn(this, (Element.__proto__ || Object.getPrototypeOf(Element)).apply(this, arguments));
+    return _callSuper(this, Element, arguments);
   }
-
-  return Element;
-}(Object);
+  _inherits(Element, _Object);
+  return _createClass(Element);
+}(/*#__PURE__*/_wrapNativeSuper(Object));
 
 /* istanbul ignore next */
-var HTMLElement = exports.HTMLElement = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.HTMLElement : function (_Element) {
-  _inherits(HTMLElement, _Element);
-
+var HTMLElement = exports.HTMLElement = _support.HAS_WINDOW_SUPPORT ? WINDOW.HTMLElement : /*#__PURE__*/function (_Element) {
   function HTMLElement() {
     _classCallCheck(this, HTMLElement);
-
-    return _possibleConstructorReturn(this, (HTMLElement.__proto__ || Object.getPrototypeOf(HTMLElement)).apply(this, arguments));
+    return _callSuper(this, HTMLElement, arguments);
   }
-
-  return HTMLElement;
+  _inherits(HTMLElement, _Element);
+  return _createClass(HTMLElement);
 }(Element);
 
 /* istanbul ignore next */
-var SVGElement = exports.SVGElement = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.SVGElement : function (_Element2) {
-  _inherits(SVGElement, _Element2);
-
+var SVGElement = exports.SVGElement = _support.HAS_WINDOW_SUPPORT ? WINDOW.SVGElement : /*#__PURE__*/function (_Element2) {
   function SVGElement() {
     _classCallCheck(this, SVGElement);
-
-    return _possibleConstructorReturn(this, (SVGElement.__proto__ || Object.getPrototypeOf(SVGElement)).apply(this, arguments));
+    return _callSuper(this, SVGElement, arguments);
   }
-
-  return SVGElement;
+  _inherits(SVGElement, _Element2);
+  return _createClass(SVGElement);
 }(Element);
 
 /* istanbul ignore next */
-var File = exports.File = _supoort.HAS_WINDOW_SUPPORT ? WINDOW.File : function (_Object2) {
-  _inherits(File, _Object2);
-
+var File = exports.File = _support.HAS_WINDOW_SUPPORT ? WINDOW.File : /*#__PURE__*/function (_Object2) {
   function File() {
     _classCallCheck(this, File);
-
-    return _possibleConstructorReturn(this, (File.__proto__ || Object.getPrototypeOf(File)).apply(this, arguments));
+    return _callSuper(this, File, arguments);
   }
-
-  return File;
-}(Object);
+  _inherits(File, _Object2);
+  return _createClass(File);
+}(/*#__PURE__*/_wrapNativeSuper(Object));

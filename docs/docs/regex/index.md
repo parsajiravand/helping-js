@@ -14,7 +14,7 @@ Check Regex Patterns in JavaScript with helping-js.
 1. You can import in your js file es6 (modules,vue,react,...)
 
 ```javascript
-import { RX_HREF } from "helping-js/core/regex"; // Check URL
+import { RX_HREF } from "helping-js/core/regex";
 
 const value = "https://github.com/parsajiravand/helping-js";
 if (RX_HREF.test(value)) {
@@ -27,7 +27,7 @@ if (RX_HREF.test(value)) {
 2. You can import in your js file es5 (nodejs)
 
 ```javascript
-const { RX_HREF } = require("helping-js/core/regex"); // Check URL
+const { RX_HREF } = require("helping-js/core/regex");
 
 const value = "https://github.com/parsajiravand/helping-js";
 if (RX_HREF.test(value)) {
@@ -37,10 +37,10 @@ if (RX_HREF.test(value)) {
 }
 ```
 
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only)
 
 ```javascript
-import { RX_HREF } from "https://unpkg.com/browse/helping-js/core/regex.js";
+import { RX_HREF } from "https://unpkg.com/helping-js/core/regex.js";
 
 const value = "https://github.com/parsajiravand/helping-js";
 if (RX_HREF.test(value)) {

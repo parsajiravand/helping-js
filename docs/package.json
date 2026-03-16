@@ -2,7 +2,7 @@
   "name": "helping-js-docs",
   "private": false,
   "author": "parsa jiravand",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "docs for helping-js.",
   "scripts": {
     "docs:dev": "vuepress dev docs",

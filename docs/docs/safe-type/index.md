@@ -1,6 +1,6 @@
-# Support
+# Safe Type
 
-check your browser or server or phone support global variables.
+Safe access to browser globals (window, document, navigator, Element, File, etc.) without throwing in Node or unsupported environments.
 
 ## Usage
 1. You can import in your js file es6 (modules,vue,react,...)
@@ -14,13 +14,13 @@ console.log(WINDOW) //{all data in window object OR empty object(if not support 
 ```javascript
 var { WINDOW } = require('helping-js/core/safe-types')
 
-console.log(WINDOW) // //{all data in window object OR empty object(if not support window)}
+console.log(WINDOW) // {all data in window object OR empty object (if window is not supported)}
 ```
-3. You can usage from CDN (only modules)
+3. You can use from CDN (ESM only)
 ```javascript
-import { WINDOW } from 'https://unpkg.com/browse/helping-js/core/safe-types.js'
+import { WINDOW } from 'https://unpkg.com/helping-js/core/safe-types.js'
 
-console.log(WINDOW) // //{all data in window object OR empty object(if not support window)}
+console.log(WINDOW) // {all data in window object OR empty object (if window is not supported)}
 ```
 
 ## Options

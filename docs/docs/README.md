@@ -3,7 +3,7 @@ home: true
 title: Helping JS | Home
 heroImage: https://i.ibb.co/7RkRvX0/helping-js-icon.png
 heroText: Helping JS
-tagline: Helping JS simple utils for javascript.
+tagline: Simple utils for JavaScript — type checkers, regex patterns, and environment support.
 actions:
   - text: Get Started
     link: /usage/
@@ -21,7 +21,7 @@ features:
     details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
   - title: Bundlers
     details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
-footer: MIT Licensed | Copyright © 2022-present Parsa Jiravand
+footer: MIT Licensed | Copyright © 2022-present Parsa Jiravand | [Changelog](https://github.com/parsajiravand/helping-js/blob/master/CHANGELOG.md)
 ---
 
 ### As Easy as 1, 2, 3

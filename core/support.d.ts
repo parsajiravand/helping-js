@@ -1,0 +1,15 @@
+export const HAS_WINDOW_SUPPORT: boolean;
+export const HAS_DOCUMENT_SUPPORT: boolean;
+export const HAS_NAVIGATOR_SUPPORT: boolean;
+export const HAS_PROMISE_SUPPORT: boolean;
+export const HAS_MUTATION_OBSERVER_SUPPORT: boolean;
+export const IS_BROWSER: boolean;
+export const WINDOW: Window | Record<string, never>;
+export const DOCUMENT: Document | Record<string, never>;
+export const NAVIGATOR: Navigator | Record<string, never>;
+export const USER_AGENT: string;
+export const IS_JSDOM: boolean;
+export const IS_IE: boolean;
+export const HAS_TOUCH_SUPPORT: boolean;
+export const HAS_POINTER_EVENT_SUPPORT: boolean;
+export const HAS_INTERACTION_OBSERVER_SUPPORT: boolean;
