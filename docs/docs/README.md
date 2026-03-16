@@ -1,7 +1,7 @@
 ---
 home: true
 title: Helping JS | Home
-heroImage: https://i.ibb.co/7RkRvX0/helping-js-icon.png
+heroImage: https://i.ibb.co/JRs0Pzv1/helping-js.png
 heroText: Helping JS
 tagline: Simple utils for JavaScript — type checkers, regex patterns, and environment support.
 actions:
