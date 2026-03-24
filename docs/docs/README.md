@@ -1,6 +1,7 @@
 ---
 home: true
 title: Helping JS | Home
+description: Official documentation for the helping-js npm package — JavaScript type checkers, regex, validate(), TypeScript, and v3 helper modules with Vue, React, and Express samples.
 heroImage: https://i.ibb.co/JRs0Pzv1/helping-js.png
 heroText: Helping JS
 tagline: Simple utils for JavaScript — type checkers, regex, validation, and optional v3 helper modules (string, array, object, async, date, URL, tree, DOM).

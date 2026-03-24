@@ -3,7 +3,7 @@
   "private": false,
   "author": "parsa jiravand",
   "version": "2.0.0",
-  "description": "docs for helping-js.",
+  "description": "Official VuePress site for the helping-js npm package — SEO-friendly docs at helping-js.netlify.app",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"

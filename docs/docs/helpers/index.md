@@ -1,3 +1,7 @@
+---
+title: Helper modules (v3+)
+description: helping-js core/number, string, array, object, async, url, date, advanced, tree, dom — import paths, API overview, and Vue, React, and Express examples.
+---
 # Helpers (v3+)
 
 Optional modules beyond **types**, **regex**, and **validate**. Tree-shake by importing only the subpaths you need: `helping-js/core/<module>`.

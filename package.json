@@ -2,7 +2,7 @@
   "name": "helping-js",
   "version": "3.0.0",
   "author": "parsa jiravand",
-  "description": "simple utils for javascript",
+  "description": "helping-js: zero-dependency JavaScript utilities — type guards, 50+ regex patterns, validate(), TypeScript .d.ts, v3 helpers (string, array, object, async, date, URL, tree, DOM). Official docs: https://helping-js.netlify.app",
   "main": "./core/types.js",
   "types": "./core/types.d.ts",
   "exports": {
@@ -30,7 +30,10 @@
     "./core/preset/form": "./core/preset/form.js"
   },
   "repository": "https://github.com/parsajiravand/helping-js",
-  "homepage": "https://github.com/parsajiravand/helping-js",
+  "homepage": "https://helping-js.netlify.app",
+  "bugs": {
+    "url": "https://github.com/parsajiravand/helping-js/issues"
+  },
   "scripts": {
     "build": "node scripts/clean-core.js && babel src -d core && node scripts/copy-types.js",
     "prepublishOnly": "npm run build",
@@ -51,8 +54,25 @@
     "prettier": "^3.2.0"
   },
   "keywords": [
+    "helping-js",
+    "helping js",
     "utility functions",
     "JavaScript helper library",
+    "JavaScript utilities",
+    "npm zero dependencies",
+    "type checking",
+    "isString",
+    "isPlainObject",
+    "regex validation",
+    "form validation",
+    "TypeScript",
+    "Vue",
+    "React",
+    "Node.js",
+    "Express",
+    "debounce",
+    "array helpers",
+    "object helpers",
     "common functions",
     "JavaScript utility belt",
     "JavaScript helper tools",

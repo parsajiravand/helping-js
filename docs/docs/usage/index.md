@@ -1,3 +1,7 @@
+---
+title: Usage
+description: Install helping-js from npm, use ESM or CommonJS, CDN unpkg, TypeScript types, and optional v3 helper modules — official helping-js package documentation.
+---
 # Usage
 
 Simple utils for JavaScript: type checkers, regex patterns, and environment support flags.

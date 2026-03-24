@@ -1,9 +1,9 @@
 
 <br>
 <p align="center">
-  <a href="https://github.com/parsajiravand/helping-js"><img src="https://i.ibb.co/JRs0Pzv1/helping-js.png" alt="Demo" width="160"></a>
+  <a href="https://github.com/parsajiravand/helping-js"><img src="https://i.ibb.co/JRs0Pzv1/helping-js.png" alt="helping-js — JavaScript utility library npm package logo" width="160"></a>
   <h2 align="center">helping-js</h2>
-  <p align="center">simple utils for javascript</p>
+  <p align="center">Zero-dependency JavaScript utilities for Node and browsers — types, regex, validation, TypeScript, and optional helper modules.</p>
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@
   </strong>
 </p>
 
-**v3** adds optional helper modules (`helping-js/core/number`, `core/string`, `core/array`, `core/object`, `core/async`, `core/date`, …). See [CHANGELOG.md](CHANGELOG.md) and [docs/HELPER_INVENTORY.md](docs/HELPER_INVENTORY.md).
+**Documentation:** [helping-js.netlify.app](https://helping-js.netlify.app) (usage, helpers, form validation, regex). **v3** adds optional helper modules (`helping-js/core/number`, `core/string`, `core/array`, `core/object`, `core/async`, `core/date`, …). See [CHANGELOG.md](CHANGELOG.md) and [docs/HELPER_INVENTORY.md](docs/HELPER_INVENTORY.md).
 
 ## Helper modules (subpath imports)
 
