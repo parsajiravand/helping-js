@@ -3,24 +3,27 @@ home: true
 title: Helping JS | Home
 heroImage: https://i.ibb.co/JRs0Pzv1/helping-js.png
 heroText: Helping JS
-tagline: Simple utils for JavaScript — type checkers, regex patterns, and environment support.
+tagline: Simple utils for JavaScript — type checkers, regex, validation, and optional v3 helper modules (string, array, object, async, date, URL, tree, DOM).
 actions:
   - text: Get Started
     link: /usage/
     type: primary
+  - text: Helper modules
+    link: /helpers/
+    type: secondary
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: Zero dependencies
+    details: Small, focused utilities you can use in Node, bundlers, or the browser without pulling in lodash-sized trees.
+  - title: TypeScript-ready
+    details: Declaration files ship for every public entry (helping-js/core/*); IDE autocomplete works out of the box.
+  - title: Types and regex
+    details: isString, isPlainObject, country-aware phone and currency patterns, and more than fifty reusable regex exports.
+  - title: Form validation
+    details: Schema-style validate(obj, rules) with RegExp or predicate rules. See the Form validation guide.
+  - title: Helper modules (v3+)
+    details: Optional imports for strings, arrays, objects, debouncing, paths, dates, caches, trees, and browser DOM helpers.
+  - title: Documented samples
+    details: Usage page, Helpers overview with Vue/React/Express snippets, and a dedicated doc page per helper module (Number, Async, DOM).
 footer: MIT Licensed | Copyright © 2022-present Parsa Jiravand | [Changelog](https://github.com/parsajiravand/helping-js/blob/master/CHANGELOG.md)
 ---
 
@@ -47,4 +50,5 @@ npm install helping-js
 
   </CodeGroupItem>
 </CodeGroup>
-```
+
+Open **[Helpers](/helpers/)** for the overview, then pick a module (e.g. **[Async](/helpers/async/)**, **[DOM](/helpers/dom/)**) for API tables and samples.

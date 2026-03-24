@@ -63,7 +63,22 @@ export default {
       },
       {
         text: "Helpers",
-        link: "/helpers/",
+        collapsible: true,
+        children: [
+          { text: "Overview", link: "/helpers/" },
+          { text: "Number", link: "/helpers/number/" },
+          { text: "String", link: "/helpers/string/" },
+          { text: "Value", link: "/helpers/value/" },
+          { text: "Array", link: "/helpers/array/" },
+          { text: "Object", link: "/helpers/object/" },
+          { text: "Function", link: "/helpers/function/" },
+          { text: "Async", link: "/helpers/async/" },
+          { text: "URL", link: "/helpers/url/" },
+          { text: "Date", link: "/helpers/date/" },
+          { text: "Advanced", link: "/helpers/advanced/" },
+          { text: "Tree", link: "/helpers/tree/" },
+          { text: "DOM", link: "/helpers/dom/" },
+        ],
       },
       {
         text: "Support",

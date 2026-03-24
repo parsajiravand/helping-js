@@ -57,6 +57,64 @@
 | `helping-js/core/tree` | `TreeData`, `walkTreeData` |
 | `helping-js/core/dom` | DOM helpers (prefer not in Node-only SSR) |
 
+### Quick examples
+
+```javascript
+import { strPad, between } from 'helping-js/core/number'
+import { kebabCase, titleCase } from 'helping-js/core/string'
+import { dotSet, dotGet } from 'helping-js/core/object'
+import { debounceTrailing } from 'helping-js/core/async'
+import { pathJoin } from 'helping-js/core/url'
+
+dotSet({}, 'meta.version', 1)
+console.log(kebabCase('UserName'), strPad('3', 2, '0')) // 'user-name', '03'
+
+const search = debounceTrailing((q) => console.log(titleCase(q)), 250)
+search('hello world')
+
+console.log(pathJoin('/api', 'v1', 'users')) // '/api/v1/users'
+```
+
+**Vue 3** — debounced input and nested config:
+
+```javascript
+import { debounceTrailing } from 'helping-js/core/async'
+import { dotGet } from 'helping-js/core/object'
+
+const onInput = debounceTrailing((e) => {
+  const q = e.target.value
+  // search(q)
+}, 300)
+const base = dotGet(config, 'api.baseUrl') // e.g. from props or Pinia
+```
+
+**React** — distinct IDs and pagination chunks:
+
+```javascript
+import { arrayDistinct, splitArray } from 'helping-js/core/array'
+const unique = arrayDistinct(ids)
+const pages = splitArray(unique, 20)
+```
+
+**Express** — path segments and numeric query checks:
+
+```javascript
+const { pathJoin } = require('helping-js/core/url')
+const { isNumeric } = require('helping-js/core/types')
+
+const uploadRoot = pathJoin(__dirname, 'public', 'uploads')
+
+app.get('/items', (req, res) => {
+  const page = req.query.page
+  if (page != null && !isNumeric(page)) {
+    return res.status(400).json({ error: 'page must be numeric' })
+  }
+  res.json({ uploadRoot })
+})
+```
+
+Full walkthrough: [docs/docs/helpers/index.md](docs/docs/helpers/index.md). The doc site lists **one page per module** under **Helpers** (e.g. `/helpers/number/`, `/helpers/async/`) with API tables and samples.
+
 ## Dependencies
 - No need Dependency
 
