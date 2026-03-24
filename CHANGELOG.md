@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2026-03-24
+
+### Added
+
+- **Helper modules** (ported from helper-js patterns): `core/number`, `core/string`, `core/value` (`isEmptyValue`), `core/array`, `core/object`, `core/function`, `core/async`, `core/url`, `core/date`, `core/advanced`, `core/tree`, `core/dom`. Each has matching `.d.ts` and `package.json` exports.
+- **Fixes vs upstream**: `strPad` returns the padded string; `arrayDiff` duplicate-count branch uses `diff === 1` like the first branch; `debounceImmediate` uses spread `...args`; `TreeData.clone` performs a proper deep clone; `viewportPositionToFixed` sets `top` from `y`.
+- **Docs**: `docs/HELPER_INVENTORY.md` maps helper-js concepts to these modules. VuePress **Helpers** page lists subpath imports. Jest tests in `test/helper-modules.test.js`.
+
+### Notes
+
+- **`core/dom`**: intended for browsers; guards avoid throwing when `document` is missing, but prefer not importing DOM helpers in Node-only SSR bundles.
+- **`core/types`**: unchanged semantics for existing type helpers (see inventory for name collisions with other libraries).
+
+---
+
 ## [2.0.0] - 2026-03-15
 
 ### Added
@@ -45,5 +60,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial public release with type checkers, regex patterns, support flags, and safe-types.
 
+[3.0.0]: https://github.com/parsajiravand/helping-js/compare/v2.0.0...v3.0.0
 [2.0.0]: https://github.com/parsajiravand/helping-js/compare/v1.0.3...v2.0.0
 [1.0.3]: https://github.com/parsajiravand/helping-js/releases/tag/v1.0.3

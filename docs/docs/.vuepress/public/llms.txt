@@ -1,0 +1,21 @@
+# helping-js
+
+> Zero-dependency JavaScript utility library published on npm as `helping-js`.
+
+## Documentation
+- Site: https://helping-js.netlify.app
+- Usage & install: https://helping-js.netlify.app/usage/
+- Helper modules (v3): https://helping-js.netlify.app/helpers/
+- Types: https://helping-js.netlify.app/types/
+- Form validation: https://helping-js.netlify.app/form-validation/
+
+## Source
+- GitHub: https://github.com/parsajiravand/helping-js
+- npm: https://www.npmjs.com/package/helping-js
+
+## What it provides
+- Type checkers: `helping-js/core/types`
+- Regex patterns: `helping-js/core/regex` (and phone/currency presets)
+- `validate(obj, rules)`: `helping-js/core/validate`
+- Optional v3 helpers: `core/number`, `core/string`, `core/array`, `core/object`, `core/async`, `core/url`, `core/date`, `core/advanced`, `core/tree`, `core/dom` (browser)
+- TypeScript declarations ship with the package

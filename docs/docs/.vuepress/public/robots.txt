@@ -1,0 +1,5 @@
+# https://helping-js.netlify.app
+User-agent: *
+Allow: /
+
+Sitemap: https://helping-js.netlify.app/sitemap.xml

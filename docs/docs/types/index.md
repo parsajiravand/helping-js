@@ -1,3 +1,7 @@
+---
+title: Types
+description: helping-js core/types — isString, isNumber, isPlainObject, isPromise, and other type guards. Official documentation.
+---
 # Types
 
 check your code type and return Booleans

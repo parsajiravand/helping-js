@@ -1,3 +1,7 @@
+---
+title: Form validation
+description: helping-js validate() — schema-style form validation with RegExp or functions. Vue and React examples. No dependencies.
+---
 # Form validation
 
 Validate form data with `validate(obj, rules)` — no validator.js, no extra dependencies. Rules can be a **RegExp** (tests `String(value)`) or a **function** `(value) => boolean`.
