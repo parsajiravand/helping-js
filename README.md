@@ -38,7 +38,24 @@
   </strong>
 </p>
 
-**v2** adds TypeScript types, proper package exports, tests, lint/format, and CI. See [CHANGELOG.md](CHANGELOG.md) for details.
+**v3** adds optional helper modules (`helping-js/core/number`, `core/string`, `core/array`, `core/object`, `core/async`, `core/date`, …). See [CHANGELOG.md](CHANGELOG.md) and [docs/HELPER_INVENTORY.md](docs/HELPER_INVENTORY.md).
+
+## Helper modules (subpath imports)
+
+| Export path | Contents (summary) |
+| --- | --- |
+| `helping-js/core/number` | `randInt`, `randChoice`, `between`, `strPad`, … |
+| `helping-js/core/string` | `camelCase`, `kebabCase`, `randString`, … |
+| `helping-js/core/value` | `isEmptyValue` |
+| `helping-js/core/array` | `arrayDiff`, `splitArray`, `arrayDistinct`, … |
+| `helping-js/core/object` | `dotGet`, `dotSet`, `objectOnly`, … |
+| `helping-js/core/function` | `resolveValueOrGetter`, `mapObjectTree`, … |
+| `helping-js/core/async` | `debounceTrailing`, `debounceImmediate`, `retry`, … |
+| `helping-js/core/url` | `pathJoin`, `getUrlParam` |
+| `helping-js/core/date` | `parseISO`, `getCalendar`, `addDate`, … |
+| `helping-js/core/advanced` | `binarySearch`, `Cache`, `windowLoaded`, … |
+| `helping-js/core/tree` | `TreeData`, `walkTreeData` |
+| `helping-js/core/dom` | DOM helpers (prefer not in Node-only SSR) |
 
 ## Dependencies
 - No need Dependency
@@ -66,7 +83,7 @@ var { isString } = require('helping-js/core/types')
 console.log(isString('test')) // true
 console.log(isString(true)) // false
 ```
-3. You can use from CDN (ESM only). Pin a version for production: `https://unpkg.com/helping-js@2/core/types.js`
+3. You can use from CDN (ESM only). Pin a version for production: `https://unpkg.com/helping-js@3/core/types.js`
 ```javascript
 import { isString } from 'https://unpkg.com/helping-js/core/types.js'
 

@@ -1,0 +1,17 @@
+export function arrayRemove<T>(arr: T[], item: T): T[];
+export function arrayRemoveBySortedIndexes<T>(arr: T[], sortedIndexes: number[]): T[];
+export function arrayAt<T>(arr: T[], index: number): T | undefined;
+export function arrayFirst<T>(arr: T[]): T | undefined;
+export function arrayLast<T>(arr: T[]): T | undefined;
+export function arrayDiff<T>(a: T[], b: T[]): [T[], T[]];
+export function indexesOf<T>(arr: T[], item: T): number[];
+export function getArrayItemSiblingsByOffsets<T>(arr: T[], item: T, offsets: number[]): T[];
+export function toArrayIfNot<T>(arrOrItem: T | T[]): T[];
+export function splitArray<T>(arr: T[], n: number): T[][];
+export function groupArray<T>(arr: T[], groupCount: number): T[][];
+export function arrayDistinct<T>(arr: T[]): T[];
+export function arrayBetween<T>(arr: T[], start: number, end: number): T[];
+export function arrayWithoutEnd<T>(arr: T[], n: number): T[];
+export function arrayFlat<T>(arr: T[], depth?: number): T[];
+export function arrayFilter<T>(arr: T[], fn: (item: T, index: number, array: T[]) => boolean): T[];
+export function arrayWithout<T>(arr: T[], ...items: T[]): T[];

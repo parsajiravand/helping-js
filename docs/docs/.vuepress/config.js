@@ -62,6 +62,10 @@ export default {
         link: "/types/",
       },
       {
+        text: "Helpers",
+        link: "/helpers/",
+      },
+      {
         text: "Support",
         link: "/support/",
       },
